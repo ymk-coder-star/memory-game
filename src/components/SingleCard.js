@@ -12,7 +12,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
 				<img className="card-front" src={card.src} alt="card-front" />
 				<img
 					className="card-back"
-					src="/img/cover.png"
+					src={`${process.env.PUBLIC_URL}/img/cover.png`}
 					alt="card-back"
 					onClick={handleClick}
 				/>
